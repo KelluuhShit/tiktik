@@ -15,13 +15,15 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .App-link {
@@ -35,4 +37,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.video-container {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
